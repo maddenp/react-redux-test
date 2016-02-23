@@ -1,11 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { render } from 'react-dom';
 
 import DynamicList from './dynamic_list';
+import reducer from './reducer';
 
-var items = ['apple', 'banana', 'cherry'];
+let store = createStore(reducer);
 
-ReactDOM.render(
-  <DynamicList items={items} />,
+var items = [
+  { key: 1, val: 'apple' },
+  { key: 2, val: 'banana' },
+  { key: 3, val: 'cherry' }
+];
+
+render(
+  <Provider store={store}>
+    <DynamicList items={items} />
+  </Provider>,
   document.getElementById('app')
 );
