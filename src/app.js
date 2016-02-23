@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import DynamicList from './dynamic_list';
+
+var items = ['apple', 'banana', 'cherry'];
+
 ReactDOM.render(
-  <h1>NAME</h1>,
+  <DynamicList items={items} />,
   document.getElementById('app')
 );
