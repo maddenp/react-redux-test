@@ -9,8 +9,9 @@ const items = [
 ];
 
 const mapStateToProps = (state) => {
+  if (!state) state = {items: items};
   return {
-    items: items
+    items: state.items
   }
 }
 
