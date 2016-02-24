@@ -7,6 +7,7 @@ import App from './src/components/App';
 import reducer from './src/reducers/reducer';
 
 const initial = {
+  box_value: '',
   items: [
     { key: 1, val: 'apple' },
     { key: 2, val: 'banana' },
