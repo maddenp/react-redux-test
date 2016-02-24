@@ -1,10 +1,8 @@
-const reducer = (state, action) => {
+export default (state, action) => {
   switch (action.type) {
   case 'REMOVE':
-    return state.items.reduce((m, e) => { e === action.item ? m : m.concat(e); }, []);
+    return { items: state.items.reduce((m, e) => e.key === action.key ? m : m.concat(e), []) };
   default:
     return state;
   }
 }
-
-export default reducer;

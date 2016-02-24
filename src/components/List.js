@@ -5,6 +5,6 @@ import removeItem from '../actions/removeItem';
 
 export default props => (
   <ul>
-    {props.items.map(item => <ListItem key={item.key} item={item.val} onClick={() => removeItem(item.key)} />)}
+    {props.items.map(item => <ListItem key={item.key} item={item.val} onClick={() => props.dispatch(removeItem(item.key))} />)}
   </ul>
 );
