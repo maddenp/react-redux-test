@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 
 import App from './src/components/App';
-import reducer from './src/reducers/reducer';
+import reducer from './reducer';
 
 const initial = {
   box_value: '',
