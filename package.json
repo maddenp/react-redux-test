@@ -20,7 +20,10 @@
   "name": "NAME",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "mocha --compilers js:babel-register --recursive",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "react-redux": "^4.4.0",
