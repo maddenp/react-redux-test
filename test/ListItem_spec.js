@@ -1,15 +1,6 @@
-import chai from 'chai';
-import React from 'react';
-import ReactTestUtils from 'react-addons-test-utils';
-import { expect } from 'chai';
-
 import ListItem from '../src/components/ListItem';
 
-const renderer = ReactTestUtils.createRenderer();
-
 describe('ListItem', () => {
-
-  let element;
 
   beforeEach(() => {
     renderer.render(
