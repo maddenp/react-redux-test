@@ -6,7 +6,7 @@ import ListItem from './ListItem';
 
 export default props => (
   <div>
-    <Box box_value={props.box_value} onEntry={props.onEntry} />
+    <Box box_value={props.box_value} onTextEntry={props.onTextEntry} />
     <Button onButtonClick={props.onButtonClick} />
     <ul>
       {props.items.map(item => <ListItem item_key={item.key} item={item.val} onItemClick={() => props.onItemClick(item.key)} />)}

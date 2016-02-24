@@ -4,7 +4,7 @@ describe('Box', () => {
 
   beforeEach(() => {
     renderer.render(
-      <Box box_value={'x'} onEntry={chai.spy()} />
+      <Box box_value={'x'} onTextEntry={chai.spy()} />
     );
     element = renderer.getRenderOutput();
   });
