@@ -11,6 +11,7 @@ const select = (state) => {
 
 const actions = (dispatch) => {
   return {
+    onButtonClick: () => { dispatch({type: 'ADD'}) },
     onEntry: val => { dispatch({type: 'ENTRY', val: val}) },
     onItemClick: key => { dispatch({type: 'REMOVE', key: key}) }
   };
