@@ -4,7 +4,7 @@ describe('ListItem', () => {
 
   beforeEach(() => {
     renderer.render(
-      <ListItem item_key={'88'} item={'mango'} onItemClick={chai.spy()} />
+      <ListItem item_key='88' item='mango' onItemClick={chai.spy()} />
     );
     element = renderer.getRenderOutput();
   });

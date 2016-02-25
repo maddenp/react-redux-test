@@ -9,5 +9,5 @@ chai.use(spies);
 global.chai = chai;
 global.element = null;
 global.expect = expect;
-global.renderer = ReactTestUtils.createRenderer();
 global.React = React;
+global.renderer = ReactTestUtils.createRenderer();

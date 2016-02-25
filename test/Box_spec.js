@@ -4,7 +4,7 @@ describe('Box', () => {
 
   beforeEach(() => {
     renderer.render(
-      <Box box_value={'x'} onTextEntry={chai.spy()} />
+      <Box box_value='x' onTextEntry={chai.spy()} />
     );
     element = renderer.getRenderOutput();
   });
@@ -18,10 +18,8 @@ describe('Box', () => {
   });
 
   it('Calls its callback when its text is changed', () => {
-    const event = {target: {value: 'hello'}};
-    element.props.onChange(event);
-    expect(element.props.onChange).to.have.been.called();
-    expect(element.props.onChange).to.have.been.called.with(event);
+    element.props.onChange('asdf');
+    expect(element.props.onChange).to.have.been.called.with('asdf');
   });
 
 });

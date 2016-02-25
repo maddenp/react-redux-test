@@ -3,9 +3,8 @@ import List from '../src/components/List';
 describe('List', () => {
 
   beforeEach(() => {
-    const i = () => {};
     renderer.render(
-      <List box_value={'x'} items={[]} onButtonClick={i} onEntry={i} onItemClick={i} />
+      <List box_value='x' items={[]} />
     );
     element = renderer.getRenderOutput();
   });
