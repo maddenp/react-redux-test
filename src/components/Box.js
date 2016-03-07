@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-export default props => (
+export default ({box_value, onTextEntry}) => (
   /* jshint ignore:start */
-  <input type="text" value={props.box_value} onChange={props.onTextEntry} />
+  <input type="text" value={box_value} onChange={onTextEntry} />
   /* jshint ignore:end */
 );

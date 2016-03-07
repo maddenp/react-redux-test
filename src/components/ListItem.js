@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-export default props => (
+export default ({item, item_key, onClick}) => (
   /* jshint ignore:start */
-  <li key={props.item_key} onClick={props.onItemClick}>{props.item}</li>
+  <li key={item_key} onClick={onClick}>{item}</li>
   /* jshint ignore:end */
 );

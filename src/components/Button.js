@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-export default props => (
+export default ({onButtonClick}) => (
   /* jshint ignore:start */
-  <button onClick={props.onButtonClick}>Add</button>
+  <button onClick={onButtonClick}>Add</button>
   /* jshint ignore:end */
 );

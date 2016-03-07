@@ -6,13 +6,13 @@ import Box from './Box';
 import Button from './Button';
 import ListItem from './ListItem';
 
-export default props => (
+export default ({box_value, items, onButtonClick, onItemClick, onTextEntry}) => (
   /* jshint ignore:start */
   <div>
-    <Box box_value={props.box_value} onTextEntry={props.onTextEntry} />
-    <Button onButtonClick={props.onButtonClick} />
+    <Box box_value={box_value} onTextEntry={onTextEntry} />
+    <Button onButtonClick={onButtonClick} />
     <ul>
-      {props.items.map(item => <ListItem item_key={item.key} item={item.val} onItemClick={() => props.onItemClick(item.key)} />)}
+      {items.map(item => <ListItem item_key={item.key} item={item.val} onClick={() => onItemClick(item.key)} />)}
     </ul>
   </div>
   /* jshint ignore:end */
