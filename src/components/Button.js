@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-export default ({onButtonClick}) => (
+export default ({onClick}) => (
   /* jshint ignore:start */
-  <button onClick={onButtonClick}>Add</button>
+  <button onClick={onClick}>Add</button>
   /* jshint ignore:end */
 );
