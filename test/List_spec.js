@@ -1,10 +1,14 @@
+/* jshint esversion: 6 */
+
 import List from '../src/components/List';
 
 describe('List', () => {
 
   beforeEach(() => {
     renderer.render(
+      /* jshint ignore:start */
       <List box_value='x' items={[]} />
+      /* jshint ignore:end */
     );
     element = renderer.getRenderOutput();
   });

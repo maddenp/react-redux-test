@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 import chai from 'chai';
 import React from 'react';
 import ReactTestUtils from 'react-addons-test-utils';

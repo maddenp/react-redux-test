@@ -1,10 +1,14 @@
+/* jshint esversion: 6 */
+
 import Button from '../src/components/Button';
 
 describe('Button', () => {
 
   beforeEach(() => {
     renderer.render(
+      /* jshint ignore:start */
       <Button onButtonClick={chai.spy()} />
+      /* jshint ignore:end */
     );
     element = renderer.getRenderOutput();
   });

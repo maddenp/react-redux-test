@@ -1,10 +1,14 @@
+/* jshint esversion: 6 */
+
 import ListItem from '../src/components/ListItem';
 
 describe('ListItem', () => {
 
   beforeEach(() => {
     renderer.render(
+      /* jshint ignore:start */
       <ListItem item_key='88' item='mango' onItemClick={chai.spy()} />
+      /* jshint ignore:end */
     );
     element = renderer.getRenderOutput();
   });

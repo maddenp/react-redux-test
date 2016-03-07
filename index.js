@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -18,8 +20,10 @@ const initial = {
 let store = createStore(reducer, initial);
 
 render(
+  /* jshint ignore:start */
   <Provider store={store}>
     <App />
   </Provider>,
+  /* jshint ignore:end */
   document.getElementById('app')
 );

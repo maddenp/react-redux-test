@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 import { connect } from 'react-redux';
 
 import List from '../components/List';
@@ -11,9 +13,9 @@ const select = (state) => {
 
 const actions = (dispatch) => {
   return {
-    onButtonClick: () => { dispatch({type: 'ADD'}) },
-    onItemClick: key => { dispatch({type: 'REMOVE', key: key}) },
-    onTextEntry: event => { dispatch({type: 'ENTRY', val: event.target.value}) }
+    onButtonClick: () => { dispatch({type: 'ADD'}); },
+    onItemClick: key => { dispatch({type: 'REMOVE', key: key}); },
+    onTextEntry: event => { dispatch({type: 'ENTRY', val: event.target.value}); }
   };
 };
 

@@ -1,10 +1,14 @@
+/* jshint esversion: 6 */
+
 import Box from '../src/components/Box';
 
 describe('Box', () => {
 
   beforeEach(() => {
     renderer.render(
+      /* jshint ignore:start */
       <Box box_value='x' onTextEntry={chai.spy()} />
+      /* jshint ignore:end */
     );
     element = renderer.getRenderOutput();
   });
